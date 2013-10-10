@@ -1,0 +1,199 @@
+@import url(reset.css);
+@import url(http://fonts.googleapis.com/css?family=Parisienne);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lusitana:400,700);
+
+
+body {
+	background-image: url(../img/backgroundpizza.png);
+	border: 8px solid #000000;
+	border-radius: 10px;
+	margin: 50px auto;
+	width: 80%;
+}
+
+.main {
+	background-color: #9A73D1;
+	padding-bottom: 5px;
+}
+
+header h1, li a, .pizza > span {
+	font-weight: bold;
+}
+
+header h1, .pizza > span {
+	font-style: italic;
+}
+
+header h1 {
+	font-family: 'Parisienne', cursive;
+	font-size: 3em;
+	margin: 23px 0px 23px 23px;
+}
+
+article .morepizza, article .order, .contact, .dessert, .image, .veggie {
+	float: right;
+}
+
+header img {
+	height: 100px;
+	width: 133px;
+}
+
+article, nav {
+	background-image: url(../img/brushed.png);
+	margin: 0px 5px;
+}
+
+article, header, .menus, nav, .pizza {
+	overflow: hidden;
+}
+
+article, .footer, nav {
+	border-radius: 5px;
+}
+
+article, nav {
+	border: 7px solid #000000;
+	margin: 0 19px 17px 19px;
+}
+
+article .morepizza, nav {
+	clear: right;
+}
+
+nav {
+	padding: 15px;
+}
+
+nav li {
+	display: inline-block;
+}
+
+address a, .footer a, li a {
+	text-decoration: none;
+}
+
+.contact, .footer, li a, .image, .information, .info, .menus {
+	color: #060606;
+}
+
+li a {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2.5em;
+	margin: 10px;
+}
+
+address a:hover, .footer a:hover, li a:hover {
+	color: #4E2588;
+}
+
+.drinks, .footer, .image, .information, .info, .menus, .pizza {
+	padding: 5px;
+}
+
+.footer, .image, .information, .info, .menus {
+	margin: 5px;	
+}
+
+.contact {
+	padding: 5px 0px;
+}
+
+article, .contact {
+	font-family: 'Lusitana', serif;
+}
+
+.footer {
+	border: 5px solid #9A73D1;
+}
+
+.contact, .dessert, .drinks, .meat, .veggie {
+	width: 45%;
+}
+
+.contact h2 {
+	font-size: 2em;
+}
+
+header h1, .drinks, .information, .meat {
+	float: left;
+}
+
+.info {
+	font-size: 1.5em;
+	margin: 0px;
+}
+
+.information h1, .info p, .menus h1, .menus h2 {
+	text-align: center;
+}
+
+.info p {
+	margin: 3px;
+}
+
+.footer {
+	clear: both;
+}
+
+.bottom img {
+	height: 470px;
+	margin: 0px 11px;
+	width: 954px;
+}
+
+address a, .footer a {
+	color: #000000;
+}
+
+.information, .image {
+	width: 47%;
+}
+
+.information h1, .menus h1 {
+	font-size: 30px;
+}
+
+.information h2, .menus h2 {
+	font-size: 25px;
+}
+
+.impact {
+	margin-top: 10px;
+}
+
+.image img {
+	height: 475px;
+	width: 460px;
+}
+
+.meat, .pizza, .veggie {
+	margin-top: 5px;
+}
+
+.pizza {
+	border-top: 2px solid #000000;
+}
+
+.pizza ul {
+	list-style-type: circle;
+	padding-left: 20px;
+}
+
+.pizza > span {
+	color: #9303A7;
+}
+
+.menus h3 {
+	font-size: 20px;
+}
+
+dt span, .pizza span, dt span {
+	text-decoration: underline;
+}
+
+article .order {
+	height: 165px;
+	width: 250px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--#include virtual="inc/common-header.html" -->
+	</head>
+
+	<body>
+		<div class="main">
+			<!--#include virtual="inc/header.html" -->
+
+			<article>
+				<div class="info">
+					<p>Awesome wood-fired pizza with fresh ingredients baked to order.</p>
+					<p>Come in and eat, or call us for delivery!</p>
+				</div>
+
+				<div class="bottom">
+					<img src="img/pizza.jpg" alt="picture of a pizza">
+				</div>
+
+				<!--#include virtual="inc/footer.html" -->
+			</article>
+		</div>
+	</body>
+</html>
