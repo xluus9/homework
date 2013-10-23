@@ -1,9 +1,10 @@
-@import url(reset.css);
+/*Adds new fonts*/
 @import url(http://fonts.googleapis.com/css?family=Parisienne);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lusitana:400,700);
 
-
+/*Changes the background, creates borders and margins
+of the body*/
 body {
 	background-image: url(../img/backgroundpizza.png);
 	border: 8px solid #000000;
@@ -12,188 +13,262 @@ body {
 	width: 80%;
 }
 
-.main {
+/*Changes the background and padding of the main
+part of the page*/
+.container {
 	background-color: #9A73D1;
 	padding-bottom: 5px;
 }
 
-header h1, li a, .pizza > span {
+/*Makes the font bold*/
+.contact h2, li a, .pizza > span {
 	font-weight: bold;
 }
 
-header h1, .pizza > span {
+/*Makes the font italic*/
+.pizza > span {
 	font-style: italic;
 }
 
-header h1 {
-	font-family: 'Parisienne', cursive;
-	font-size: 3em;
-	margin: 23px 0px 23px 23px;
-}
-
-article .morepizza, article .order, .contact, .dessert, .image, .veggie {
+/*Makes these classes float right*/
+article .morepizza, article .order, .image, .veggie {
 	float: right;
 }
 
-header img {
+/*Changes the height and width of the image*/
+.logo img {
 	height: 100px;
-	width: 133px;
+	width: 416px;
 }
 
+/*Changes background image and margin
+of the nav and article*/
 article, nav {
 	background-image: url(../img/brushed.png);
 	margin: 0px 5px;
 }
 
-article, header, .menus, nav, .pizza {
+/*Makes the overflow hidden*/
+article, .menus, .pizza {
 	overflow: hidden;
 }
 
+/*Creates a border radius*/
 article, .footer, nav {
 	border-radius: 5px;
 }
 
+/*Creates a border and margin*/
 article, nav {
 	border: 7px solid #000000;
 	margin: 0 19px 17px 19px;
 }
 
-article .morepizza, nav {
+/*Makes these elements clear right*/
+article .morepizza {
 	clear: right;
 }
 
-nav {
-	padding: 15px;
-}
-
-nav li {
-	display: inline-block;
-}
-
+/*Changes text decoration*/
 address a, .footer a, li a {
 	text-decoration: none;
 }
 
+/*Changes the color to a dark gray*/
 .contact, .footer, li a, .image, .information, .info, .menus {
 	color: #060606;
 }
 
+/*Changes font family, size, and margin*/
 li a {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 2.5em;
 	margin: 10px;
 }
 
+/*Changes color to a dark purple*/
 address a:hover, .footer a:hover, li a:hover {
 	color: #4E2588;
 }
 
-.drinks, .footer, .image, .information, .info, .menus, .pizza {
+/*Changes padding*/
+.dessert, .drinks, .footer, .image, .information, .info, .menus, .pizza {
 	padding: 5px;
 }
 
+/*Changes margin*/
 .footer, .image, .information, .info, .menus {
 	margin: 5px;	
 }
 
-.contact {
-	padding: 5px 0px;
-}
-
+/*Changes font family*/
 article, .contact {
 	font-family: 'Lusitana', serif;
 }
 
+/*Creates a border around the element
+and makes the element clear both*/
 .footer {
 	border: 5px solid #9A73D1;
+	clear: both;
 }
 
-.contact, .dessert, .drinks, .meat, .veggie {
-	width: 45%;
-}
-
+/*Changes font size*/
 .contact h2 {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
-header h1, .drinks, .information, .meat {
+/*Makes elements float left*/
+.information {
 	float: left;
 }
 
+/*Changes font size and margin*/
 .info {
 	font-size: 1.5em;
 	margin: 0px;
 }
 
+/*Makes the text align to center*/
 .information h1, .info p, .menus h1, .menus h2 {
 	text-align: center;
 }
 
+/*Changes margin*/
 .info p {
 	margin: 3px;
 }
 
-.footer {
-	clear: both;
-}
-
+/*Sets height, width, and margin*/
 .bottom img {
 	height: 470px;
-	margin: 0px 11px;
-	width: 954px;
+	width: 931px;
 }
 
+/*Changes color to black*/
 address a, .footer a {
 	color: #000000;
 }
 
+/*Sets width to 47%*/
 .information, .image {
 	width: 47%;
 }
 
+/*Changes font size*/
 .information h1, .menus h1 {
 	font-size: 30px;
 }
 
+/*Changes font size*/
 .information h2, .menus h2 {
 	font-size: 25px;
 }
 
+/*Changes margin top*/
 .impact {
 	margin-top: 10px;
 }
 
+/*Sets the height and width of the image*/
 .image img {
 	height: 475px;
 	width: 460px;
 }
 
+/*Changes the margin top*/
 .meat, .pizza, .veggie {
 	margin-top: 5px;
 }
 
+/*Changes the border top*/
 .pizza {
 	border-top: 2px solid #000000;
 }
 
+/*Sets a list style type and padding*/
 .pizza ul {
 	list-style-type: circle;
 	padding-left: 20px;
 }
 
+/*Changes the color*/
 .pizza > span {
 	color: #9303A7;
 }
 
+/*Changes the font size*/
 .menus h3 {
 	font-size: 20px;
 }
 
+/*Changes text decoration*/
 dt span, .pizza span, dt span {
 	text-decoration: underline;
 }
 
+/*Sets height and width*/
 article .order {
 	height: 165px;
 	width: 250px;
+}
+
+address {
+	margin-bottom: 0px;
+}
+
+.pizza h2 {
+	margin-top: 10px;
+}
+
+h1, h2, h3, p {
+	margin: 0;
+}
+
+.header {
+	margin-left: 5px;
+}
+
+.navbar-mobile {
+	display: none;
+}
+
+iframe {
+	border: 0;
+	display: block;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1100px) {
+	.logo img {
+		width: 350px;
+	}
+}
+
+@media screen and (max-width: 1001px) {
+	.morepizza, .order {
+		display: none;
+	}	
+}
+
+@media screen and (max-width: 767px) {
+	.bottom, .video {
+		display: none;
+	}
+
+	.navbar-mobile {
+		display: inline;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.navbar-mobile {
+		font-size: .95em;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.logo img {
+		display: none;
+	}
 }
