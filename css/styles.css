@@ -3,226 +3,199 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lusitana:400,700);
 
-/*Changes the background, creates borders and margins
-of the body*/
+/*All pages*/
 body {
 	background-image: url(../img/backgroundpizza.png);
-	border: 8px solid #000000;
-	border-radius: 10px;
 	margin: 50px auto;
 	width: 80%;
 }
 
-/*Changes the background and padding of the main
-part of the page*/
 .container {
 	background-color: #9A73D1;
-	padding-bottom: 5px;
+	border: 8px solid #000000;
+	border-radius: 10px;
 }
 
-/*Makes the font bold*/
-.contact h2, li a, .pizza > span {
-	font-weight: bold;
+.bottom img, .image img, .logo img {
+	height: auto;
 }
 
-/*Makes the font italic*/
-.pizza > span {
-	font-style: italic;
+.bottom img, .footer, .image img, .logo img {
+	width: 100%;
 }
 
-/*Makes these classes float right*/
-article .morepizza, article .order, .image, .veggie {
-	float: right;
-}
-
-/*Changes the height and width of the image*/
-.logo img {
-	height: 100px;
-	width: 416px;
-}
-
-/*Changes background image and margin
-of the nav and article*/
-article, nav {
-	background-image: url(../img/brushed.png);
-	margin: 0px 5px;
-}
-
-/*Makes the overflow hidden*/
-article, .menus, .pizza {
+article, .info, .menus, .pizza {
 	overflow: hidden;
 }
 
-/*Creates a border radius*/
 article, .footer, nav {
+	background-image: url(../img/brushed.png);
 	border-radius: 5px;
 }
 
-/*Creates a border and margin*/
 article, nav {
 	border: 7px solid #000000;
 	margin: 0 19px 17px 19px;
 }
 
-/*Makes these elements clear right*/
-article .morepizza {
-	clear: right;
-}
-
-/*Changes text decoration*/
 address a, .footer a, li a {
 	text-decoration: none;
 }
 
-/*Changes the color to a dark gray*/
-.contact, .footer, li a, .image, .information, .info, .menus {
+.contact, .footer, .information, .info, li a, .menus {
 	color: #060606;
 }
 
-/*Changes font family, size, and margin*/
+.information h1, .info p, .menus h1, .menus h2 {
+	text-align: center;
+}
+
+h1, h2, h3, .info, p {
+	margin: 0px;
+}
+
+.bottom img, .image, .morepizza, .order {
+	opacity: .7;
+}
+
+.bottom img:hover, .image:hover, .morepizza:hover, .order:hover {
+	opacity: 1; 
+}
+
+.header, .information h2, .meat, .pizza, .veggie {
+	margin-top: 5px;
+}
+/*end all pages*/
+
+/*Index page CSS*/
+.contact h2, .info {
+	font-size: 1.5em;
+}
+
+.info p {
+	margin: 3px;
+}
+
+.bottom img {
+	max-height: 470px;
+}
+
+.video iframe {
+	border: 0;
+	display: block;
+	margin: 5px auto;
+}
+/*end Index page*/
+
+/*Menu page CSS*/
+.pizza > span {
+	font-style: italic;
+}
+
+article .morepizza, article .order {
+	float: right;
+}
+
+article .morepizza {
+	clear: right;
+}
+
+.dessert, .drinks, .footer, .info, .menus, .pizza {
+	padding: 5px;
+}
+
+.menus {
+	margin: 5px;	
+}
+
+.information, .pizza ul {
+	padding-left: 20px;
+}
+
+.information h1, .menus h1 {
+	font-size: 30px;
+}
+
+.information h2, .menus h2 {
+	font-size: 25px;
+}
+
+.pizza {
+	border-top: 2px solid #000000;
+}
+
+.pizza ul {
+	list-style-type: circle;
+}
+
+.pizza > span {
+	color: #9303A7;
+}
+
+.menus h3 {
+	font-size: 20px;
+}
+
+dt span, .pizza span {
+	text-decoration: underline;
+}
+
+article .order {
+	height: 165px;
+	width: 250px;
+}
+
+.pizza h2 {
+	margin-top: 10px;
+}
+/*end Menu page*/
+
+/*About page CSS*/
+.container, .information h1 {
+	padding-bottom: 5px;
+}
+
+.image img {
+	max-width: 460px;
+}
+
+.information h1 {
+	border-bottom: 2px solid #000000;
+	padding-top: 5px;
+}
+/*end About page*/
+
+/*Header CSS*/
+.contact h2, li a, .pizza > span {
+	font-weight: bold;
+}
+
+.logo img {
+	max-width: 416px;
+	-webkit-animation: pulse 5s infinite;
+	animation: pulse 5s infinite;
+}
+
 li a {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 2.5em;
 	margin: 10px;
 }
 
-/*Changes color to a dark purple*/
 address a:hover, .footer a:hover, li a:hover {
 	color: #4E2588;
 }
 
-/*Changes padding*/
-.dessert, .drinks, .footer, .image, .information, .info, .menus, .pizza {
-	padding: 5px;
-}
-
-/*Changes margin*/
-.footer, .image, .information, .info, .menus {
-	margin: 5px;	
-}
-
-/*Changes font family*/
 article, .contact {
 	font-family: 'Lusitana', serif;
 }
 
-/*Creates a border around the element
-and makes the element clear both*/
-.footer {
-	border: 5px solid #9A73D1;
-	clear: both;
-}
-
-/*Changes font size*/
-.contact h2 {
-	font-size: 1.5em;
-}
-
-/*Makes elements float left*/
-.information {
-	float: left;
-}
-
-/*Changes font size and margin*/
-.info {
-	font-size: 1.5em;
-	margin: 0px;
-}
-
-/*Makes the text align to center*/
-.information h1, .info p, .menus h1, .menus h2 {
-	text-align: center;
-}
-
-/*Changes margin*/
-.info p {
-	margin: 3px;
-}
-
-/*Sets height, width, and margin*/
-.bottom img {
-	height: 470px;
-	width: 931px;
-}
-
-/*Changes color to black*/
 address a, .footer a {
 	color: #000000;
 }
 
-/*Sets width to 47%*/
-.information, .image {
-	width: 47%;
-}
-
-/*Changes font size*/
-.information h1, .menus h1 {
-	font-size: 30px;
-}
-
-/*Changes font size*/
-.information h2, .menus h2 {
-	font-size: 25px;
-}
-
-/*Changes margin top*/
-.impact {
-	margin-top: 10px;
-}
-
-/*Sets the height and width of the image*/
-.image img {
-	height: 475px;
-	width: 460px;
-}
-
-/*Changes the margin top*/
-.meat, .pizza, .veggie {
-	margin-top: 5px;
-}
-
-/*Changes the border top*/
-.pizza {
-	border-top: 2px solid #000000;
-}
-
-/*Sets a list style type and padding*/
-.pizza ul {
-	list-style-type: circle;
-	padding-left: 20px;
-}
-
-/*Changes the color*/
-.pizza > span {
-	color: #9303A7;
-}
-
-/*Changes the font size*/
-.menus h3 {
-	font-size: 20px;
-}
-
-/*Changes text decoration*/
-dt span, .pizza span, dt span {
-	text-decoration: underline;
-}
-
-/*Sets height and width*/
-article .order {
-	height: 165px;
-	width: 250px;
-}
-
 address {
 	margin-bottom: 0px;
-}
-
-.pizza h2 {
-	margin-top: 10px;
-}
-
-h1, h2, h3, p {
-	margin: 0;
 }
 
 .header {
@@ -233,26 +206,36 @@ h1, h2, h3, p {
 	display: none;
 }
 
-iframe {
-	border: 0;
-	display: block;
-	margin: 0 auto;
+@-webkit-keyframes pulse {
+    0%      {opacity: 0.3;}
+    50%     {opacity: 1;}
+    100%    {opacity: 0.3;}
 }
-
-@media screen and (max-width: 1100px) {
-	.logo img {
-		width: 350px;
-	}
+@keyframes pulse {
+    0%      {opacity: 0.3;}
+    50%     {opacity: 1;}
+    100%    {opacity: 0.3;}
 }
+/*end Header*/
 
+/*Footer CSS*/
+.footer {
+	border: 5px solid #9A73D1;
+	bottom: 0px;
+	left: 0px;
+	position: fixed;
+}
+/*end Footer*/
+
+/*Mobile/Tablet CSS*/
 @media screen and (max-width: 1001px) {
-	.morepizza, .order {
+	.image, .morepizza, .order {
 		display: none;
 	}	
 }
 
 @media screen and (max-width: 767px) {
-	.bottom, .video {
+	.video {
 		display: none;
 	}
 
@@ -261,14 +244,23 @@ iframe {
 	}
 }
 
+@media screen and (max-width: 540px) {
+	.menus {
+		font-size: 12px;
+	}
+
+	.menus h1 {
+		font-size: 25px;
+	}
+
+	.menus h2 {
+		font-size: 20px;
+	}
+}
+
 @media screen and (max-width: 350px) {
 	.navbar-mobile {
 		font-size: .95em;
 	}
 }
-
-@media screen and (max-width: 540px) {
-	.logo img {
-		display: none;
-	}
-}
+/*end Mobile/Tablet*/
