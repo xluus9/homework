@@ -1,27 +1,115 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!--#include virtual="inc/common-header.html" -->
+		<meta charset="UTF-8">
+		<title>Dawg Pizza</title>
+		<meta name="author" content="luus">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/logo.png">
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/stylesV3.css">
 	</head>
-
 	<body>
-		<div class="main">
-			<!--#include virtual="inc/header.html" -->
+		<div class="container">
+			<div class="top">
+				<div class="row">
+					<div class="menu-col col-md-6">
+						<div class="menu-button">Our Menu</div>
+					</div>
+					<div class="info-col col-md-6">
+						<div class="info">
+							<img src="img/logo.png" alt="logo of dawg pizza">
 
-			<article>
-				<div class="info">
-					<p>Awesome wood-fired pizza with fresh ingredients baked to order.</p>
-					<p>Come in and eat, or call us for delivery!</p>
+							<div><p>Open: Monday-Saturday</p><p>Hours: 10am-11pm</p><p>Call: 206-555-1212</p><p>4306 University Way NE, Seattle, WA 98105</p>
+							</div>
+
+							<p><a href="https://twitter.com/DawgPizzaSea" class="twitter-follow-button" data-show-count="false">Follow @DawgPizzaSea</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+
+							<p><a href="https://github.com/xluus9/homework" target="github">Source Repository</a></p>
+
+							<div class="locate-button">
+								<a href="http://goo.gl/dDbBFS" target="googlemaps">Locate Us</a>
+							</div>
+						</div>
+					</div>
 				</div>
 
-				<div class="bottom">
-					<img src="img/pizza.jpg" alt="picture of a pizza">
-				</div>
 
-				<div class="footer">
-					&copy; 2013 Simon Luu - Call us for delivery: 206-555-1212 - <a href="https://github.com/xluus9/homework" target="github">Source Repository</a>
+				<div class="modal fade menu-detail">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1>Dawg Pizza Menu<button type="button" class="btn btn-default exit" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button></h1>
+							</div>
+							<div class="modal-body">
+								<div class="pizza">
+									<h2>Pizzas:</h2>
+
+									<p>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens. Choose from one of these sizes:</p>
+
+									<ul>
+										<li>Small (12")</li>
+										<li>Medium (14")</li>
+										<li>Large (17")</li>
+									</ul>
+
+									<span class="pizza-alert">All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</span>
+
+									<br>
+
+									<div class="row">
+										<div class="meat col-md-6">
+											<h3>Meat Pies:</h3>
+											<dl class="meat-list"></dl>
+										</div>
+
+										<div class="veggie col-md-6">
+											<h3>Vegetarian Pies:</h3>
+											<dl class="veggie-list"></dl>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="drinks">
+												<h2>Drinks:</h2>
+												<ul class="drink-list"></ul>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="dessert">
+												<h2>Dessert:</h2>
+												<ul class="dessert-list"></ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</article>
+			</div>
 		</div>
+
+
+
+		<div class="template pizza-list">
+			<dt><span class="name"></span> <span class="prices"></span></dt>
+			<dd class="description"></dd>
+		</div>
+
+		<li class="template item-name"></li>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoS3Sl6NFqMAdoWCd54K54TUIkkF_sV44&sensor=true">
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+		<script src="http://www.dawgpizza.com/orders/menu.js"></script>
+
+		<script src="js/menuGen.js"></script>
 	</body>
 </html>

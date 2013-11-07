@@ -46,7 +46,7 @@ address a, .footer a, li a {
 	color: #060606;
 }
 
-.information h1, .info p, .menus h1, .menus h2 {
+.information h1, .info p, .menus h1, .pizza > h2 {
 	text-align: center;
 }
 
@@ -88,7 +88,7 @@ h1, h2, h3, .info, p {
 /*end Index page*/
 
 /*Menu page CSS*/
-.pizza > span {
+.pizza-alert {
 	font-style: italic;
 }
 
@@ -128,7 +128,7 @@ article .morepizza {
 	list-style-type: circle;
 }
 
-.pizza > span {
+.pizza-alert {
 	color: #9303A7;
 }
 
@@ -136,7 +136,7 @@ article .morepizza {
 	font-size: 20px;
 }
 
-dt span, .pizza span {
+.name, .pizza-alert {
 	text-decoration: underline;
 }
 
@@ -148,6 +148,16 @@ article .order {
 .pizza h2 {
 	margin-top: 10px;
 }
+
+.drinks h2, .dessert h2 {
+	margin-bottom: 5px;
+}
+
+.navbar-mobile, .template {
+	display: none;
+}
+
+.........................................................
 /*end Menu page*/
 
 /*About page CSS*/
@@ -166,7 +176,7 @@ article .order {
 /*end About page*/
 
 /*Header CSS*/
-.contact h2, li a, .pizza > span {
+.contact h2, li a, .pizza-alert {
 	font-weight: bold;
 }
 
@@ -200,10 +210,6 @@ address {
 
 .header {
 	margin-left: 5px;
-}
-
-.navbar-mobile {
-	display: none;
 }
 
 @-webkit-keyframes pulse {

@@ -27,6 +27,69 @@
 							<li>Large (17")</li>
 						</ul>
 
+						<span class="pizza-alert">All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</span>
+
+						<br>
+
+						<div class="row">
+							<div class="meat col-md-6">
+								<h3>Meat Pies:</h3>
+								<dl class="meat-list"></dl>
+							</div>
+
+							<div class="veggie col-md-6">
+								<h3>Vegetarian Pies:</h3>
+								<dl class="veggie-list"></dl>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="drinks">
+									<h2>Drinks:</h2>
+									<ul class="drink-list"></ul>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="dessert">
+									<h2>Dessert:</h2>
+									<ul class="dessert-list"></ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="template pizza-list">
+					<dt><span class="name"></span> <span class="prices"></span></dt>
+					<dd class="description"></dd>
+				</div>
+
+				<li class="template item-name"></li>
+			</article>
+		</div>
+		<!--#include virtual="inc/footer.html" -->
+	</body>
+</html>
+
+<!--
+									<li class="dessert-list"></li>
+
+<div class="menus">
+					<h1>Dawg Pizza Menu</h1>
+
+					<div class="pizza">
+						<h2>Pizzas:</h2>
+
+						<p>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens. Choose from one of these sizes:</p>
+
+						<ul>
+							<li>Small (12")</li>
+							<li>Medium (14")</li>
+							<li>Large (17")</li>
+						</ul>
+
 						<span>All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</span>
 
 						<br>
@@ -85,13 +148,4 @@
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<!--#include virtual="inc/footer.html" -->
-			</article>
-		</div>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	</body>
-</html>
+				</div>-->

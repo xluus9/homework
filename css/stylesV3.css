@@ -1,0 +1,178 @@
+@import url(http://fonts.googleapis.com/css?family=Courgette);
+@import url(http://fonts.googleapis.com/css?family=Fenix);
+
+body {
+	background-image: url(../img/pizza2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%, auto;
+}
+
+a, body {
+	color: black;
+}
+
+.template {
+	display: none;
+}
+
+.top {
+	height: 550px;
+	margin: 65px auto;
+	position: relative;
+	width: 90%;
+}
+
+.info h1, .info p, .menu-button, .menu-detail h1, .menu-detail h2 {
+	margin: 0px;
+}
+
+.info, .menu-button {
+	background-color: #1DB5A0;
+}
+
+.info, .locate-button, .menu-button {
+	border-radius: 4px;
+}
+
+.exit, .info {
+	float: right;
+}
+
+.info {
+	font-family: 'Fenix' sans-serif;
+	padding: 5px;
+}
+
+.info-col {
+	bottom: 0;
+	position: absolute;
+	right: 0;
+}
+
+.info h1, .info p, .locate-button, .menu-button {
+	text-align: center;
+}
+
+.info p, .menu-button {
+	color: #FFC600;
+}
+
+.info p {
+	font-size: 15px;
+}
+
+.locate-button, .menu-button {
+	font-family: 'Courgette', serif;
+}
+
+.locate-button {
+	background-color: #FFC600;
+	font-size: 24px;
+	margin: 0px auto;
+	width: 50%;
+}
+
+.info img {
+	height: auto;
+	max-width: 350px;
+	width: 100%;
+}
+
+.menu-button {
+	border: 2px solid black;
+	font-size: 32px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 36%;
+}
+
+.modal-body, .modal-header {
+	padding-top: 5px;
+	padding-bottom: 0px;
+}
+
+.modal {
+	overflow-y: auto;
+}
+
+.pizza-alert {
+	color: red;
+}
+
+@media screen and (max-width: 1283px) {
+	.top {
+		height: 500px;
+	}
+}
+
+@media screen and (max-width: 1142px) {
+	.top {
+		height: 450px;
+	}
+}
+
+@media screen and (min-width: 786px) {
+	.modal-dialog {
+		padding-bottom: 0px;
+		padding-top: 5px;
+		width: 1000px;
+	}
+}
+
+@media screen and (max-width: 814px) {
+	.info-col {
+		position: relative;
+	}
+
+	.info {
+		float: none;
+		width: 50%;
+	}
+
+	body {
+		background-image: url(../img/brushed.png);
+		background-repeat: repeat;
+	}
+
+	.info img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.top {
+		height: auto;
+	}
+
+	.menu-button {
+		width: 100%;
+	}
+
+	.info {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.modal-body {
+		font-size: 12px;
+	}
+
+	.modal-body h1 {
+		font-size: 25px;
+	}
+
+	.modal-body h2 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.container {
+		width: 350px;
+	}
+
+	.top {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+}
