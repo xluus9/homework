@@ -52,4 +52,6 @@ function renderMenu(pizzas, drinks, desserts) {
 		dClone.removeClass('template');
 		dessertList.append(dClone);
 	});
+	//There is probably some way to put this redundant code
+	//into a function, but I couldn't figure it out
 }
