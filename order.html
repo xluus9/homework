@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Dawg Pizza</title>
+		<meta name="author" content="luus">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/logo.png">
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/stylesV3.css">
+	</head>
+
+	<body>
+		<div class="container order-page">
+			<img class="background" src="img/pizza2.jpg" alt="pic of pizza">
+			<h1>Order Online - We deliver within Seattle limits from 12pm to 11pm - Cash or Credit Cards<a href="index.html"><span class="glyphicon glyphicon-remove"></span></a></h1>
+
+			<div class="order row">
+				<div class="col-md-4 col-md-push-8">
+					<h2>Your Cart</h2>
+					<div class="cart-items-container"></div>
+					<div class="cart-footer">
+						<div class="row total-row">
+							<div class="col-xs-10">
+								Total:
+							</div>
+
+							<div class="col-xs-2">
+								$<span class="total-price"></span>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-12 button-row">
+								<button type="button" class="btn btn-primary place-order">Place My Order</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8 col-md-pull-4">
+					<div class="pizza">
+						<div class="row">
+							<div class="meat col-md-6">
+								<h3>Meat Pies:</h3>
+								<dl class="meat-list"></dl>
+							</div>
+
+							<div class="veggie col-md-6">
+								<h3>Vegetarian Pies:</h3>
+								<dl class="veggie-list"></dl>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="drinks">
+									<h2>Drinks:</h2>
+									<ul class="drink-list"></ul>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="dessert">
+									<h2>Dessert:</h2>
+									<ul class="dessert-list"></ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="template">
+			<div class="pizza-list">
+				<dt><span class="name"></span> <span class="prices"></span></dt>
+				<dd class="description"></dd>
+			</div>
+
+			<ul>
+				<li class="item-name"></li>
+			</ul>
+			<!--<div class="pizza-template pizzas clearfix">
+				<h3 class="title"></h3>
+
+				<p class="format-template">
+					<label class="size"><input type="radio" name="" value=""></label>
+					<button type="button" class="btn btn-default add-to-cart">Add to Cart</button>
+				</p>
+			</div>
+
+			<div class="cart-item-template cart-item row">
+				<div class="col-xs-10">
+					<p><button type="button" class="btn btn-default btn-xs remove-item"><span class="glyphicon glyphicon-remove"></span></button>
+						<span class="title"></span>
+					</p>
+				</div>
+
+				<div class="col-xs-2 col-price">
+					<p>$<span class="price"></span></p>
+				</div>
+			</div>-->
+		</div>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoS3Sl6NFqMAdoWCd54K54TUIkkF_sV44&amp;sensor=true">
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+		<script src="http://www.dawgpizza.com/orders/menu.js"></script>
+
+		<script src="js/menuGen.js"></script>
+		<script src="js/shoppingCart.js"></script>
+
+
+        <script src="js/utils.js"></script>
+        <script src="js/events.js"></script>
+        <script src="js/models.js"></script>
+        <script src="js/views.js"></script>
+        <script src="js/pizzas.js"></script>
+        <script src="js/pizzasView.js"></script>
+        <script src="js/pizzaView.js"></script>
+        <script src="js/cart.js"></script>
+        <script src="js/cartItemView.js"></script>
+        <script src="js/cartView.js"></script>
+        <script src="js/controller.js"></script>
+	</body>
+</html>

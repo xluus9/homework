@@ -11,10 +11,12 @@
 	</head>
 	<body>
 		<div class="container">
+			<img class="background" src="img/pizza2.jpg" alt="pic of pizza">
 			<div class="top">
 				<div class="row">
 					<div class="menu-col col-md-6">
 						<div class="menu-button">Our Menu</div>
+						<div class="order-button">Order Online</div>
 					</div>
 					<div class="info-col col-md-6">
 						<div class="info">
@@ -59,13 +61,13 @@
 
 									<div class="row">
 										<div class="meat col-md-6">
-											<h3>Meat Pies:</h3>
-											<dl class="meat-list"></dl>
+											<h2>Meat Pies:</h2>
+											<div class="meat-list"></div>
 										</div>
 
 										<div class="veggie col-md-6">
-											<h3>Vegetarian Pies:</h3>
-											<dl class="veggie-list"></dl>
+											<h2>Vegetarian Pies:</h2>
+											<div class="veggie-list"></div>
 										</div>
 									</div>
 
@@ -73,14 +75,144 @@
 										<div class="col-md-6">
 											<div class="drinks">
 												<h2>Drinks:</h2>
-												<ul class="drink-list"></ul>
+												<div class="drink-list"></div>
 											</div>
 										</div>
 
 										<div class="col-md-6">
 											<div class="dessert">
 												<h2>Dessert:</h2>
-												<ul class="dessert-list"></ul>
+												<div class="dessert-list"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade order-detail">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1>Order Online<button type="button" class="btn btn-default exit" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button></h1>
+							</div>
+							<div class="modal-body">
+								<p>We deliver within Seattle limits from 12pm to 11pm - Cash or Credit Cards</p>
+								<div class="order row">
+									<div class="col-md-4 col-md-push-8">
+										<div class="form-info">
+											<label class="col-lg-5 control-label">Full Name:</label>
+											<div class="col-lg-7">
+												<input type="text" name="name" placeholder="Enter Full Name">
+											</div>
+										</div>
+
+										<div class="form-info">
+											<label class="col-lg-5 control-label">Address 1:</label>
+											<div class="col-lg-7">
+												<input type="text" name="address1" placeholder="Enter Address">
+												<input type="text" name="address2" placeholder="Optional Address">
+											</div>
+										</div>
+
+										<div class="form-info">
+											<label class="col-lg-5 control-label">Zip Code:</label>
+											<div class="col-lg-7">
+												<input type="text" name="zip" maxlength="5" placeholder="Enter Zipcode">
+											</div>
+										</div>
+
+										<div class="form-info">
+											<label class="col-lg-5 control-label">Phone:</label>
+											<div class="col-lg-7">
+												<input type="text" name="phonenumber" maxlength="12" placeholder="Enter Phone Number">
+											</div>
+										</div>
+										<h2>Your Cart:</h2>
+										<div class="cart-items-container"></div>
+										<div class="cart-footer">
+											<div class="row total-row">
+												<div class="col-xs-8">
+													Sub-Total:
+												</div>
+
+												<div class="col-xs-4">
+													$<span class="total-price"></span>
+												</div>
+											</div>
+
+											<div class="row tax-row">
+												<div class="col-xs-8">
+													Tax:
+												</div>
+
+												<div class="col-xs-4">
+													$<span class="tax-price"></span>
+												</div>
+											</div>
+
+											<div class="row grand-row">
+												<div class="col-xs-8">
+													Grand Total:
+												</div>
+
+												<div class="col-xs-4">
+													$<span class="grand-price"></span>
+												</div>
+											</div>
+
+											<div class="row alert-row">
+												<div class="col-xs-12 alert-div"></div>
+											</div>
+
+											<div class="row">
+												<div class="col-xs-12 button-row">
+													<button type="button" class="btn btn-primary start-over">Clear My Order</button>
+													<form class="data-submit" method="POST" action="http://dawgpizza.com/orders/">
+														<input type="hidden" name="cart">
+														<button type="submit" class="btn btn-primary place-order">Place My Order</button>
+													</form>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-xs-12 previous-row">
+													<button type="button" class="btn btn-primary previous-order">Previous Order</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-8 col-md-pull-4">
+										<div class="pizza">
+											<div class="row">
+												<div class="meat col-md-6">
+													<h2>Meat Pies:</h2>
+													<div class="meat-list"></div>
+												</div>
+
+												<div class="veggie col-md-6">
+													<h2>Vegetarian Pies:</h2>
+													<div class="veggie-list"></div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-6">
+													<div class="drinks">
+														<h2>Drinks:</h2>
+														<div class="drink-list"></div>
+													</div>
+												</div>
+
+												<div class="col-md-6">
+													<div class="dessert">
+														<h2>Dessert:</h2>
+														<div class="dessert-list"></div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -93,15 +225,29 @@
 		</div>
 
 
+		<div class="templates">
+			<dl class="pizza-list">
+				<dt><span class="name"></span> <span class="prices"></span></dt>
+				<dd class="description"></dd>
+			</dl>
 
-		<div class="template pizza-list">
-			<dt><span class="name"></span> <span class="prices"></span></dt>
-			<dd class="description"></dd>
+			<ul class="item-list">
+				<li class="item-name"></li>
+			</ul>
+
+			<div class="cart-item-template cart-item row">
+                <div class="col-xs-10">
+                    <p><button type="button" class="btn btn-default btn-xs remove-item">&times;</button> 
+                        <span class="name"></span> (<span class="size quantity"></span>)
+                    </p>
+                </div>
+                <div class="col-xs-2 col-price">
+                    <p>$<span class="price"></span></p>
+                </div>
+            </div>
 		</div>
 
-		<li class="template item-name"></li>
-
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoS3Sl6NFqMAdoWCd54K54TUIkkF_sV44&sensor=true">
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoS3Sl6NFqMAdoWCd54K54TUIkkF_sV44&amp;sensor=true">
 		</script>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -110,6 +256,14 @@
 
 		<script src="http://www.dawgpizza.com/orders/menu.js"></script>
 
-		<script src="js/menuGen.js"></script>
+		<script src="js/genMenuOrder.js"></script>
+
+        <script src="js/utils.js"></script>
+        <script src="js/events.js"></script>
+        <script src="js/models.js"></script>
+        <script src="js/views.js"></script>
+        <script src="js/cart.js"></script>
+        <script src="js/cartItemView.js"></script>
+        <script src="js/cartView.js"></script>
 	</body>
 </html>
